@@ -8,6 +8,43 @@
   border-collapse: collapse;
   padding: 10px;
   }</style>
+  <script>
+  function formvalidation()
+  {
+	var name = document.forms["myform"]["fname"];
+	var phone=document.forms["myfrom"]["moblie"];
+	var letters = /^[A-Za-z]+$/;
+     if(name.value.match(letters))
+{
+return true;
+}
+else
+{
+alert('Username must have alphabet characters only');
+name.focus();
+return false;
+}
+var phoneno =/^[0-9]+$/;
+  if((phone.value.match(phoneno)))
+        {
+      return true;
+        }
+      else
+        {
+        alert("phone number should be 10 digits");
+        return false;
+        }
+}
+	  
+	  
+	  
+  
+	  
+	  
+	  
+	  
+	  
+	  </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></head>
 	<body>
@@ -17,13 +54,13 @@
   <a href="homepage.html" class="w3-bar-item w3-button">Home</a>
   <a href="registration.html" class="w3-bar-item w3-button">Registration Form</a>
 </div>
-<form type="Get" action="details.html" name="myform">
+<form type="Get" action="details.html" name="myform" onsubmit="return formvalidation();">
 <table style="width:600px">
 <tr><td><center><b>First Name:</b></center></td><td><input type="text" name=fname required /></td>
 </tr>
 <tr><td><center><b>Email:</b></center></td><td><input type="text" name=email required /><td>
 </tr>
-<tr><td><b><center>Phone No:</b></center></td><td><input type="text" name=mobile required /></td>
+<tr><td><b><center>Phone No:</b></center></td><td><input type="number" name=mobile required /></td>
 </tr>
 <tr><td><b><center>Gender:</center></b></td><td><input type="radio" name=gender>Male  <input type="radio" name=gender>Female  <input type="radio" name=gender>Others</td></tr>
 <tr><td><b><center>Reason for RDIP:</center></b></td><td><input type="checkbox" name=check>HTML  <input type="checkbox" name=check>CSS  <input type="checkbox" name=check>JavaScript</td></tr>
