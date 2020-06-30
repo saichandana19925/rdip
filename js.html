@@ -1,0 +1,73 @@
+
+<html>
+<body>
+<span id="type"></span>
+<span id="val"></span>
+<p>Math.pow(x,y) returns the value of x to the power of y:</p>
+
+<p id="demo"></p>
+
+<p>square root of 9:</p>
+
+<p id="sqrt"></p>
+<p>abs of -9:</p>
+
+<p id="abs"></p>
+
+<p>Random number</p>
+
+<p id="ran"></p>
+
+<p>ceil of ran:</p>
+
+<p id="ceil"></p>
+
+<p>floor of Random number</p>
+
+<p id="floor"></p>
+
+<p>round of Random number</p>
+
+<p id="round"></p>
+
+
+
+<table border="1" id="tab">
+	<tr><td>sub</td><td>marks</td></tr>
+	<tr><td>cd</td><td>92</td></tr>
+	<tr><td>python</td><td>93</td></tr>
+	
+</table>
+
+<script>
+var ar=[1,2,3,4,5];
+ar[3]=String(ar[3]);
+document.getElementById("type").innerHTML=(typeof(ar[3]));
+
+ var table=document.getElementById("tab"),sumval=0,avgval=0,rowcount=table.rows.length-1;
+ 
+for(i=1;i<table.rows.length;i++)
+{
+	sumval=sumval+parseInt(table.rows[i].cells[1].innerHTML);
+	}
+avgval=sumval/rowcount;
+var row=table.insertRow(3);
+var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = "total";
+  cell2.innerHTML = avgval;
+  
+  
+
+
+document.getElementById("demo").innerHTML = Math.pow(8,2);
+document.getElementById("sqrt").innerHTML = Math.sqrt(9);
+document.getElementById("abs").innerHTML = Math.abs(-9);
+var rand=Math.random();
+document.getElementById("ran").innerHTML = rand;
+document.getElementById("ceil").innerHTML = Math.ceil(rand);
+document.getElementById("floor").innerHTML = Math.floor(rand);
+document.getElementById("round").innerHTML = Math.round(rand);
+</script>
+</body>
+</html> 
