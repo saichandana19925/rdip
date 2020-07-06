@@ -1,14 +1,17 @@
 <html>
 	<link rel="stylesheet" href="task3css.css"/>
 	<body>
-		<h1>palindrome</h1>
-		Enter The Number :<input type="text" name="n" id = "N"/>
-		<button onClick="Palindrome()">CHECK</button>
+		<h1>palindrome</h1><br>
+		<form name="check" method="get">
+		Enter the string:<input type="text" name="pal" id = "pal"/><br>
+		<button onClick="palin()">CHECK</button>
 		<div class="strings">
 <h1>Anagram</h1>			
-String 1: <input type="text" id="string1"/>
-String 2: <input type="text" id="string2"/>
-<input type="button" value="Test!" id="button-test" onclick="checkAnagram()"/>
+String 1: <input type="text" id="string1" name="s1"/>
+String 2: <input type="text" id="string2" name="s2"/>
+<input type="button" value="Test!" id="button-test" onclick="anagram()"/>
+
+</form>
 </div>
 <div id="result"></div>
 		<script src="task.js">
