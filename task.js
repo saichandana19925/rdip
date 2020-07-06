@@ -13,14 +13,6 @@ calculatorForm.evalresult.value=t
 function abs(result)
 {
 	calculatorForm.evalresult.value=Math.abs(result)
-		{
-			rem = number%10;
-			number = parseInt(number/10);
-			final = final*10+rem;
-		}
-		if(final==temp)
-		{
-			window.alert("The inputed number is Palindrome");
 }
 function validate() {
   var no = document.getElementById("no").value;
