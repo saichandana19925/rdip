@@ -1,0 +1,4 @@
+#1.On clicking the provided link there are 6 icons where each have a unique functionality.
+#2.In the experiment1 we have to deal with EXPERIMENT icon(button).
+#3.On clicking the icon we will be redirected to a page in which at first we will be asked to select the language from the given list of languages.
+#4.After selecting the language there will be words which have button functionality, on pressing the word it will be added to the sentence you wish to form after selecting all the words we can either check the correctness of the sentence i.e. syntatically and semantically correct or re-frame the sentence at any moment.
